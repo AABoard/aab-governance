@@ -1,20 +1,48 @@
-# aab-governance
-The AAB Governance repository contains organizational documents and policies related to the governance and operations of the International AI Assessment Board (AAB).
+# AAB Governance
 
-This repository supports transparency and accountability by making core governance documents publicly accessible.
+This repository documents how the International AI Assessment Board (AAB) operates as an independent, transparent, public-interest initiative. It is the public collaboration layer for governance policies, review rules, role definitions, decision records, and standards approval process documentation.
 
-Materials in this repository may include:
+## What Belongs Here
 
-bylaws and organizational policies
+- Governance policies and procedures.
+- Board, advisory, reviewer, maintainer, and working-group role descriptions.
+- Conflict-of-interest and independence policies.
+- Registry review and publication policies.
+- Standards approval and public consultation processes.
+- Decision records for important organizational choices.
+- Meeting notes that are approved for public release.
 
-board resolutions and governance procedures
+## What Does Not Belong Here
 
-working group charters
+- Live registry data.
+- MongoDB credentials or operational secrets.
+- Website source code.
+- Private personnel, donor, legal, or partner documents.
+- Informal notes that have not been approved for publication.
 
-review and editorial guidelines for the Case Registry
+## Repository Structure
 
-volunteer and contributor policies
+- `policies/` - governance, review, conflict-of-interest, and publication policies.
+- `roles/` - role definitions for maintainers, reviewers, advisors, and working groups.
+- `decisions/` - lightweight decision records for major governance and infrastructure choices.
+- `meetings/` - public meeting notes and agendas.
+- `.github/ISSUE_TEMPLATE/` - governance proposal and policy correction forms.
 
-standards development process documentation
+## Decision Flow
 
-The goal of this repository is to provide an open reference for how AAB operates as an independent, collaborative initiative supporting AI education research and assessment.
+1. A proposal is opened as an issue.
+2. Maintainers assign the proposal to the appropriate governance area.
+3. Reviewers discuss scope, risks, affected policies, and implementation path.
+4. Accepted proposals update a policy, role document, or decision record through a pull request.
+5. The final decision remains traceable through the issue, PR, and decision record.
+
+## Core Principles
+
+- Independence from commercial, political, or institutional control.
+- Neutrality in registry documentation and standards development.
+- Transparency about methods, assumptions, and limitations.
+- Public-interest use of registry, standards, and research outputs.
+
+## Contributing
+
+Use `CONTRIBUTING.md` before submitting a policy or governance proposal. Governance changes should describe the problem, the proposed decision, affected roles or workflows, and any public-risk considerations.
