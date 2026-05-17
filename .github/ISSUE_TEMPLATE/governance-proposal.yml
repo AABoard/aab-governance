@@ -1,0 +1,50 @@
+name: Governance proposal
+description: Propose a policy, role, review-process, or decision-record change.
+title: "[Governance]: "
+labels: ["status:needs-triage"]
+body:
+  - type: dropdown
+    id: proposal_type
+    attributes:
+      label: Proposal type
+      options:
+        - Policy change
+        - Role definition
+        - Review workflow
+        - Standards approval process
+        - Decision record
+        - Meeting note correction
+        - Other governance issue
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem, gap, or risk should this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: What should AAB change?
+    validations:
+      required: true
+  - type: textarea
+    id: affected_areas
+    attributes:
+      label: Affected areas
+      description: Policies, roles, repos, working groups, or workflows affected.
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and tradeoffs
+      description: Public trust, independence, neutrality, privacy, or implementation risks.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: This proposal does not include private personnel, donor, partner, student, credential, or legal-sensitive material.
+          required: true
